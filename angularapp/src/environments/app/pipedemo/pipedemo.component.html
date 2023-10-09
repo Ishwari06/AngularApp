@@ -1,0 +1,34 @@
+<!-- // parameter in pipe -->
+
+<p>Todays  Date : <strong>{{todaysDate | date:'shortDate'}}</strong></p>
+<p>Todays  Date : <strong>{{todaysDate | date:'fullDate'}}</strong></p>
+<p>Todays  Date : <strong>{{todaysDate | date:'M/dd/yyyy'}}</strong></p>
+<p>Todays  Date : <strong>{{todaysDate | date:'h:mm'}}</strong></p>
+
+<!-- change pipe -->
+<div>
+    Date with chindedpipes upeercase : <strong>{{todaysDate | date:'fullDate' | uppercase}}</strong>
+    Date with chindedpipes upeercase : <strong>{{todaysDate | date:'fullDate' | lowercase}}</strong>
+
+</div>
+
+<div style="text-align: center;">
+    <h2>Currency pipe</h2>
+    <p>{{ price | currency:'EUR'}}</p>
+    <p>{{ price | currency:'INR'}}</p>
+    <p>{{ price | currency:'USD'}}</p>
+</div>
+
+<div style="text-align: center;">
+    <p>{{emp | json}}</p>
+</div>
+
+<div style="text-align: center;">
+    <p>{{myObservable | async}}</p>
+ </div>
+
+<div style="text-align: center;">
+    <h1>Custom Pipe</h1>
+
+    {{price | count }}
+</div> 
